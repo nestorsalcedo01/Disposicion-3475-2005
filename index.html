@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Guía de Almacenamiento Farmacéutico (ANMAT 3475/05)</title>
+    <style>
+        /* --- ESTILOS COMPARTIDOS (COPIAR EN TODOS LOS ARCHIVOS) --- */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #0d47a1; /* Azul oscuro */
+            --secondary-color: #1976d2; /* Azul medio */
+            --accent-color: #42a5f5; /* Azul claro */
+            --background-color: #f5f5f5;
+            --text-color: #333;
+            --card-bg-color: #ffffff;
+            --shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: var(--accent-color);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        .link-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .link-card {
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            padding: 2.5rem;
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .link-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+        }
+
+        .link-card h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .link-container {
+                grid-template-columns: 1fr;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guía de Almacenamiento Farmacéutico</h1>
+        <p>Basado en la Disposición ANMAT N° 3475/05</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="requisitos-generales.html">Requisitos Generales</a></li>
+            <li><a href="condiciones-especificas.html">Condiciones Específicas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p class="intro-text">
+            Bienvenido a la guía de referencia sobre las Buenas Prácticas de Almacenamiento de productos farmacéuticos. Explore las secciones para entender los requisitos de infraestructura, operación y manejo de productos especiales.
+        </p>
+
+        <div class="link-container">
+            <a href="requisitos-generales.html" class="link-card">
+                <h2>Requisitos Generales del Almacén</h2>
+                <p>Explore la infraestructura, condiciones ambientales, procedimientos operativos y normas de limpieza e higiene.</p>
+            </a>
+            <a href="condiciones-especificas.html" class="link-card">
+                <h2>Condiciones Específicas de Productos</h2>
+                <p>Descubra los requerimientos para productos de cadena de frío, psicotrópicos y estupefacientes.</p>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Interpretación didáctica del Anexo de la Disposición ANMAT N° 3475/05.</p>
+    </footer>
+
+</body>
+</html>
