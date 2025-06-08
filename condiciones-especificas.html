@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiciones Específicas - Guía de Almacenamiento</title>
+    <style>
+        /* --- ESTILOS COMPARTIDOS (COPIAR EN TODOS LOS ARCHIVOS) --- */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #0d47a1; /* Azul oscuro */
+            --secondary-color: #1976d2; /* Azul medio */
+            --accent-color: #42a5f5; /* Azul claro */
+            --background-color: #f5f5f5;
+            --text-color: #333;
+            --card-bg-color: #ffffff;
+            --shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: var(--accent-color);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .content-card {
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-card h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .content-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .content-card ul li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+        }
+
+        .content-card ul li::before {
+            content: '»';
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .citation { font-size: 0.8rem; color: #777; font-style: italic; }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guía de Almacenamiento Farmacéutico</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="requisitos-generales.html">Requisitos Generales</a></li>
+            <li><a href="condiciones-especificas.html" class="active">Condiciones Específicas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content-card">
+            <h2>Productos que Requieren Cadena de Frío</h2>
+            <ul>
+                <li>El almacenamiento debe ser en equipamiento frigorífico (refrigeradores, cámaras frías, congeladores).</li>
+                <li>Los equipos deben ser controlados continuamente por termógrafos o termómetros de máxima y mínima.</li>
+                <li>Las mediciones de temperatura deben ser realizadas y registradas con frecuencia.</li>
+                <li>Se debe poseer una red alternativa de energía (generador) para atender eventuales fallas de energía.</li>
+                <li>Deben existir sistemas de alarma que indiquen inmediatamente cualquier anormalidad en el funcionamiento de los equipos.</li>
+                <li>La distribución de los productos dentro de los equipos debe permitir la libre circulación de aire frío.</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>Productos de Control Especial (Psicotrópicos y Estupefacientes)</h2>
+            <ul>
+                <li>Sus áreas de almacenamiento son consideradas de máxima seguridad.</li>
+                <li>Deben estar en áreas o compartimentos aislados del resto de los productos.</li>
+                <li>El acceso a estas áreas está restringido solamente al personal autorizado por el Director Técnico.</li>
+                <li>Los registros de entrada y salida deben realizarse de acuerdo con la legislación sanitaria específica.</li>
+            </ul>
+        </div>
+        
+        <div class="content-card">
+            <h2>Definiciones Clave de Temperatura</h2>
+            <ul>
+                <li><strong>Refrigeración:</strong> Espacio frío con temperatura mantenida termostáticamente entre 2°C y 8°C.</li>
+                <li><strong>Congelador:</strong> Espacio frío con temperatura mantenida termostáticamente entre -20°C y -10°C.</li>
+                <li><strong>Enfriado:</strong> Cualquier temperatura entre 8°C y 15°C.</li>
+                <li><strong>Frío:</strong> Cualquier temperatura que no exceda los 8°C.</li>
+                <li><strong>Ambiente Controlado:</strong> Sala donde la temperatura es mantenida entre 15°C y 30°C.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Interpretación didáctica del Anexo de la Disposición ANMAT N° 3475/05.</p>
+    </footer>
+
+</body>
+</html>
