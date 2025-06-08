@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisitos Generales - Guía de Almacenamiento</title>
+    <style>
+        /* --- ESTILOS COMPARTIDOS (COPIAR EN TODOS LOS ARCHIVOS) --- */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #0d47a1; /* Azul oscuro */
+            --secondary-color: #1976d2; /* Azul medio */
+            --accent-color: #42a5f5; /* Azul claro */
+            --background-color: #f5f5f5;
+            --text-color: #333;
+            --card-bg-color: #ffffff;
+            --shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: var(--accent-color);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .content-card {
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-card h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .content-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .content-card ul li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+        }
+
+        .content-card ul li::before {
+            content: '»';
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .citation { font-size: 0.8rem; color: #777; font-style: italic; }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guía de Almacenamiento Farmacéutico</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="requisitos-generales.html" class="active">Requisitos Generales</a></li>
+            <li><a href="condiciones-especificas.html">Condiciones Específicas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content-card">
+            <h2>Edificio e Instalaciones</h2>
+            <ul>
+                <li>La construcción y localización deben facilitar el mantenimiento, la limpieza y las operaciones.</li>
+                <li>Las superficies interiores deben ser lisas, sin rajaduras y sin desprendimiento de polvo.</li>
+                <li>Se requiere espacio suficiente para el flujo ordenado de personal y materiales, evitando mezclas.</li>
+                <li>Se deben tener áreas definidas para: Recepción, Almacenamiento, Expedición, Devolución y Administración.</li>
+                <li>Los vestuarios, sanitarios y salas de descanso deben estar separados de las áreas de almacenamiento.</li>
+                <li>Debe contar con protección para impedir la entrada de roedores, aves, insectos u otros animales.</li>
+                <li>Deben existir medidas rigurosas de prevención y combate de incendios.</li>
+            </ul>
+        </div>
+        
+        <div class="content-card">
+            <h2>Condiciones Ambientales y su Control</h2>
+            <ul>
+                <li>La iluminación, ventilación, temperatura y humedad deben ser controladas para evitar efectos perjudiciales en los productos.</li>
+                <li>Es obligatorio mantener un registro documentado de las condiciones ambientales de almacenamiento.</li>
+                <li>Los productos deben almacenarse en locales sin incidencia de luz solar directa.</li>
+                <li>Un "área de ambiente controlado" debe mantener la temperatura entre 15°C y 30°C.</li>
+                <li>Las mediciones de temperatura deben ser constantes y registradas, con sistemas de alerta para fallos en los equipos.</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>Procedimientos Operativos de Almacenamiento</h2>
+            <ul>
+                <li>El almacenamiento debe ser ordenado, permitiendo individualizar cada lote y expedirlos por fecha de vencimiento.</li>
+                <li>Los productos no deben estar en contacto con el piso  y deben estar distanciados de las paredes.</li>
+                <li>El apilamiento de cajas debe seguir las instrucciones del fabricante.</li>
+                <li>El stock debe permitir la fácil visualización de nombre, lote y fecha de vencimiento.</li>
+                <li>Se debe inventariar la existencia periódicamente, investigando y registrando cualquier discrepancia.</li>
+                <li>Los productos con embalajes deteriorados o con sospecha de contaminación deben ser identificados y separados en un área aislada.</li>
+            </ul>
+        </div>
+        
+        <div class="content-card">
+            <h2>Limpieza, Higiene y Personal</h2>
+            <ul>
+                <li>Los locales de almacenamiento deben mantenerse limpios y libres de contaminantes.</li>
+                <li>Se debe contar con un programa de control de insectos y roedores.</li>
+                <li>Está prohibido fumar, comer o beber en las áreas de almacenamiento.</li>
+                <li>El personal debe usar uniformes adecuados al trabajo a ejecutar.</li>
+                <li>El acceso a personas extrañas está terminantemente prohibido en las áreas de almacenamiento.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Interpretación didáctica del Anexo de la Disposición ANMAT N° 3475/05.</p>
+    </footer>
+
+</body>
+</html>
